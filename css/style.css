@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src:  url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'segoesc';
+    src: url('../fonts/segoesc.eot');
+    src:  url('../fonts/segoesc.woff') format('woff'), url('../fonts/segoesc.ttf') format('truetype'), url('../fonts/segoesc.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'montserrat', sans-serif;
+}
+.section-sidebar{
+    height: 980px;
+    width: 100%;
+    background: url("../images/bg-sideBar.jpg") center;
+    background-size: cover;
+    display: flex;
+    flex-flow: wrap column;
+}
+.header{
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 60px;
+    margin-bottom: 196px;
+}
+.header .logo{
+    flex: 1 1 auto;
+    max-width: 410px;
+}
+.header nav{
+    flex: 1 1 auto;
+}
+
+nav ul{
+    padding:0;
+    margin: 0;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+    text-transform: uppercase;
+}
+.header button{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    max-height: 35px;
+    background: #ef5b5b;
+    color: white;
+    margin-left: 20px;
+
+}
+.nav-link{
+    display: block;
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 1px solid transparent;
+}
+.nav-link:hover{
+    color:white;
+    border-bottom: 1px solid white;
+
+}
+.sidebar-main{
+    display: flex;
+}
+.sidebar-main__content{
+    align-self: center;
+}
+.sidebar-main__content .desc__pink{
+    font-family: 'segoesc';
+    color: #ef5b5b;
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+.sidebar-main__content .title{
+    font-size: 41px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.sidebar-main__content .desc__sale{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.sidebar-main__content button{
+    padding: 10px 22px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    background: #ef5b5b;
+}
+
+.trip{
+    display:flex ;
+}
+.trip .booking{
+    flex: 0 1 auto;
+    max-width: 300px;
+}
+.trip .place{
+    flex: 5 1 250px;
+    position: relative;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+}
+.place .place-abs{
+    position: absolute;
+    bottom:50%;
+    left: 0;
+    display: flex;
+}
+.place__items {
+    width: 340px;
+    margin-left: 30px;
+    max-height: 400px;
+}
+
+.place-abs > * {
+    flex: 1 1 auto;
+}
